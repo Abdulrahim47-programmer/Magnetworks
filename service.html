@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iFast Hotspot – Affordable Internet Plans (Zanzibar)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="service.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">🌐</div>
+        <div class="brand-text">
+          <span class="brand-title">iFast</span>
+          <span class="brand-subtitle">Hotspot</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#plans">Plans</a>
+        <a href="#contact">Contact</a>
+        <a href="#" id="join-community">Join community</a>
+      </nav>
+    </div>
+    <div class="hero container">
+      <h1>Journey With <span class="accent">iFast Hotspot</span></h1>
+      <p class="sub">
+        Connect your computer, phone, and numerous other devices anywhere in Zanzibar.
+      </p>
+      <button class="btn primary" id="btn-early">Get early access</button>
+    </div>
+    <div class="hero-curve"></div>
+  </header>
+
+  <main class="container">
+    <section id="plans" class="plans">
+      <div class="section-tag">INTERNET PACKAGES</div>
+      <h2>Affordable Internet Plans</h2>
+      <p class="section-sub">
+        Enjoy high-speed internet with our flexible plans. Choose the best package for your needs.
+        Now available anywhere in Zanzibar. For any inquiry please call us via <a href="tel:+255774111444">+255 774 111 444</a>.
+      </p>
+
+      <div id="plans-grid" class="grid"></div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact Us</h3>
+      <form id="contact-form" class="card form">
+        <div class="grid two">
+          <label>Full name
+            <input name="name" type="text" required />
+          </label>
+          <label>Phone / WhatsApp
+            <input name="phone" type="tel" required />
+          </label>
+        </div>
+        <label>Email (optional)
+          <input name="email" type="email" />
+        </label>
+        <label>Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send message</button>
+        <p class="form-tip">We reply within 24 hours.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> iFast Hotspot. All rights reserved.</p>
+      <p class="small">Made with 💜 in Zanzibar.</p>
+    </div>
+  </footer>
+
+  <!-- Purchase Modal -->
+  <dialog id="purchase-modal" class="modal">
+    <form method="dialog" class="modal-card" id="purchase-form">
+      <button class="close" value="cancel" aria-label="Close">×</button>
+      <h3>Purchase Plan</h3>
+      <p id="selected-plan" class="muted"></p>
+      <input type="hidden" name="plan_id" />
+      <label>Full name
+        <input name="name" type="text" required />
+      </label>
+      <label>Phone / WhatsApp
+        <input name="phone" type="tel" required />
+      </label>
+      <label>Email (optional)
+        <input name="email" type="email" />
+      </label>
+      <button class="btn primary" type="submit">Confirm Purchase</button>
+      <p class="form-tip">You will receive payment instructions via SMS/WhatsApp.</p>
+    </form>
+  </dialog>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
